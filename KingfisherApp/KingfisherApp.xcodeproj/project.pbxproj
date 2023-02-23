@@ -10,9 +10,10 @@
 		27BD2F6B29A78C4700E0ADB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD2F6A29A78C4700E0ADB6 /* AppDelegate.swift */; };
 		27BD2F6D29A78C4700E0ADB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD2F6C29A78C4700E0ADB6 /* SceneDelegate.swift */; };
 		27BD2F6F29A78C4700E0ADB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD2F6E29A78C4700E0ADB6 /* ViewController.swift */; };
-		27BD2F7229A78C4700E0ADB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27BD2F7029A78C4700E0ADB6 /* Main.storyboard */; };
 		27BD2F7429A78C4800E0ADB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BD2F7329A78C4800E0ADB6 /* Assets.xcassets */; };
 		27BD2F7729A78C4800E0ADB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27BD2F7529A78C4800E0ADB6 /* LaunchScreen.storyboard */; };
+		27BD2F8229A78F1200E0ADB6 /* SparkUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27BD2F8129A78F1200E0ADB6 /* SparkUI */; };
+		27BD2F8529A7915600E0ADB6 /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = 27BD2F8429A7915600E0ADB6 /* Bond */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,10 @@
 		27BD2F6A29A78C4700E0ADB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27BD2F6C29A78C4700E0ADB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27BD2F6E29A78C4700E0ADB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27BD2F7129A78C4700E0ADB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27BD2F7329A78C4800E0ADB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27BD2F7629A78C4800E0ADB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27BD2F7829A78C4800E0ADB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27BD2F7F29A78C8600E0ADB6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BD2F8229A78F1200E0ADB6 /* SparkUI in Frameworks */,
+				27BD2F8529A7915600E0ADB6 /* Bond in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,8 @@
 		27BD2F5E29A78C4700E0ADB6 = {
 			isa = PBXGroup;
 			children = (
+				27BD2F7F29A78C8600E0ADB6 /* README.md */,
+				27BD2F7E29A78C7500E0ADB6 /* img */,
 				27BD2F6929A78C4700E0ADB6 /* KingfisherApp */,
 				27BD2F6829A78C4700E0ADB6 /* Products */,
 			);
@@ -59,12 +64,18 @@
 				27BD2F6A29A78C4700E0ADB6 /* AppDelegate.swift */,
 				27BD2F6C29A78C4700E0ADB6 /* SceneDelegate.swift */,
 				27BD2F6E29A78C4700E0ADB6 /* ViewController.swift */,
-				27BD2F7029A78C4700E0ADB6 /* Main.storyboard */,
 				27BD2F7329A78C4800E0ADB6 /* Assets.xcassets */,
 				27BD2F7529A78C4800E0ADB6 /* LaunchScreen.storyboard */,
 				27BD2F7829A78C4800E0ADB6 /* Info.plist */,
 			);
 			path = KingfisherApp;
+			sourceTree = "<group>";
+		};
+		27BD2F7E29A78C7500E0ADB6 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +94,10 @@
 			dependencies = (
 			);
 			name = KingfisherApp;
+			packageProductDependencies = (
+				27BD2F8129A78F1200E0ADB6 /* SparkUI */,
+				27BD2F8429A7915600E0ADB6 /* Bond */,
+			);
 			productName = KingfisherApp;
 			productReference = 27BD2F6729A78C4700E0ADB6 /* KingfisherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +126,10 @@
 				Base,
 			);
 			mainGroup = 27BD2F5E29A78C4700E0ADB6;
+			packageReferences = (
+				27BD2F8029A78F1200E0ADB6 /* XCRemoteSwiftPackageReference "SparkUI" */,
+				27BD2F8329A7915600E0ADB6 /* XCRemoteSwiftPackageReference "Bond" */,
+			);
 			productRefGroup = 27BD2F6829A78C4700E0ADB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +146,6 @@
 			files = (
 				27BD2F7729A78C4800E0ADB6 /* LaunchScreen.storyboard in Resources */,
 				27BD2F7429A78C4800E0ADB6 /* Assets.xcassets in Resources */,
-				27BD2F7229A78C4700E0ADB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +165,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27BD2F7029A78C4700E0ADB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27BD2F7129A78C4700E0ADB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		27BD2F7529A78C4800E0ADB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +302,6 @@
 				INFOPLIST_FILE = KingfisherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +329,6 @@
 				INFOPLIST_FILE = KingfisherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +366,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27BD2F8029A78F1200E0ADB6 /* XCRemoteSwiftPackageReference "SparkUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/SparkUI.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+		27BD2F8329A7915600E0ADB6 /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ggthedev/Bond.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27BD2F8129A78F1200E0ADB6 /* SparkUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27BD2F8029A78F1200E0ADB6 /* XCRemoteSwiftPackageReference "SparkUI" */;
+			productName = SparkUI;
+		};
+		27BD2F8429A7915600E0ADB6 /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27BD2F8329A7915600E0ADB6 /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27BD2F5F29A78C4700E0ADB6 /* Project object */;
 }
